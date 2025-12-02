@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#005f4e" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Global Agrosmart</title>
+    <meta property="og:title" content="Global Agrosmart" />
+    <meta name="twitter:title" content="Global Agrosmart" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="canonical" href="https://lp.globalagrosmart.com.br/institucional" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
+
+    <style>
+        :root {
+            --ink: #222;
+            --muted: #5a5a5a;
+            --bg: #f6f6f6;
+            --paper: #ffffff;
+            --brand: #6cae9a;
+            --deep: #005f4e;
+            --cta: #25c938;
+            --shadow: 0 12px 30px rgba(0, 0, 0, .08);
+            --radius: 14px;
+            --max: 990px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            margin: 0;
+            color: var(--ink);
+            background: var(--bg);
+            font-family: Lato, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            line-height: 1.5;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 100%;
+            max-width: var(--max);
+            margin: 0 auto;
+            padding: 0 18px;
+        }
+
+        .section {
+            padding: 64px 0;
+        }
+
+        .grid {
+            display: grid;
+            gap: 18px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 18px 20px;
+            border-radius: 999px;
+            font-weight: 900;
+            background: var(--cta);
+            color: #fff;
+            box-shadow: 0 10px 20px rgba(37, 201, 56, .22);
+            border: 0;
+            cursor: pointer;
+            transition: transform .12s ease, filter .12s ease;
+            min-height: 56px;
+            text-align: center;
+        }
+
+        .btn:hover {
+            transform: translateY(-1px);
+            filter: brightness(1.03);
+        }
+
+        .btn:active {
+            transform: translateY(0px);
+            filter: brightness(.98);
+        }
+
+        .btn.secondary {
+            background: transparent;
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, .55);
+            box-shadow: none;
+        }
+
+        /* ======================= */
+        /* HERO RESPONSIVO CORRIGIDO */
+        /* ======================= */
+
+        .hero {
+            width: 100%;
+            color: #fff;
+            padding: 0;
+            background:
+                linear-gradient(to bottom, rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)),
+                url("https://d335luupugsy2.cloudfront.net/cms/files/1085989/1761568641/$7mqxuvhnwhe") center/cover no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-wrap {
+            width: 100%;
+            min-height: 520px;
+            display: flex;
+            align-items: center;
+            padding: 56px 0;
+        }
+
+        .hero .content {
+            width: 100%;
+            max-width: 46ch;
+        }
+
+        .hero h1,
+        .hero p {
+            overflow-wrap: anywhere;
+        }
+
+        .logo {
+            width: 200px;
+            margin: 10px 0 22px;
+        }
+
+        .hero h1 {
+            font-size: clamp(28px, 4.5vw, 42px);
+            line-height: 1.15;
+            margin: 0 0 14px;
+            font-weight: 900;
+        }
+
+        .hl {
+            background: var(--brand);
+            padding: 2px 8px;
+            border-radius: 10px;
+            display: inline;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+        }
+
+        .hero p {
+            margin: 10px 0;
+            font-size: clamp(16px, 2.2vw, 20px);
+            color: rgba(255, 255, 255, .92);
+        }
+
+        .hero .ctaRow {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 18px;
+        }
+
+        /* ======================= */
+        /* MOBILE HERO FIX */
+        /* ======================= */
+
+        @media(max-width:720px) {
+
+            .hero {
+                background-position: 65% center;
+            }
+
+            .hero-wrap {
+                min-height: auto;
+                padding: 28px 0 40px;
+            }
+
+            .logo {
+                width: 150px;
+                margin: 6px 0 14px;
+            }
+
+            .hero .content {
+                max-width: 100%;
+            }
+
+            .hero h1 {
+                font-size: clamp(24px, 6.2vw, 32px);
+                line-height: 1.18;
+                margin-bottom: 10px;
+            }
+
+            .hero p {
+                font-size: 15px;
+                line-height: 1.45;
+            }
+
+            .hl {
+                padding: 2px 6px;
+                border-radius: 9px;
+            }
+
+            .hero h1 .hl {
+                display: inline-block;
+                margin-bottom: 8px;
+            }
+
+            .hero .ctaRow {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 10px;
+            }
+
+            .hero .ctaRow .btn {
+                width: 100%;
+                padding: 16px 18px;
+                min-height: 52px;
+            }
+        }
+
+        /* ======================= */
+        /* SEÇÕES NORMAIS */
+        /* ======================= */
+
+        .tag {
+            display: inline-block;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: rgba(108, 174, 154, .16);
+            color: var(--brand);
+            font-weight: 900;
+            letter-spacing: .2px;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        .card {
+            background: var(--paper);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            border: 1px solid rgba(0, 0, 0, .05);
+        }
+
+        .card.pad {
+            padding: 18px;
+        }
+
+        .twoCol {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 22px;
+            align-items: center;
+        }
+
+        @media(min-width:860px) {
+            .twoCol {
+                grid-template-columns: 1fr 1.2fr;
+            }
+
+            .twoCol.swap {
+                grid-template-columns: 1.2fr 1fr;
+            }
+        }
+
+        .title {
+            font-size: clamp(22px, 3.5vw, 32px);
+            line-height: 1.15;
+            margin: 0 0 10px;
+            color: var(--brand);
+            font-weight: 900;
+        }
+
+        .lead {
+            color: var(--muted);
+            margin: 0 0 14px;
+            font-size: 16px;
+        }
+
+        .bullets {
+            display: grid;
+            gap: 12px;
+            margin: 14px 0 18px;
+        }
+
+        .bullet {
+            background: var(--paper);
+            border-radius: 12px;
+            border: 1px solid rgba(0, 0, 0, .06);
+            padding: 14px 14px;
+        }
+
+        .resultsWrap {
+            background: var(--bg);
+            padding-top: 20px;
+        }
+
+        .stats {
+            display: grid;
+            gap: 14px;
+            grid-template-columns: 1fr;
+        }
+
+        @media(min-width:720px) {
+            .stats {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .stat {
+            padding: 16px;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            min-height: 92px;
+        }
+
+        .stat img {
+            width: 56px;
+        }
+
+        .ctaBlock {
+            background: var(--deep);
+            color: #fff;
+            padding: 56px 0;
+        }
+
+        .ctaBlock .inner {
+            display: grid;
+            gap: 14px;
+            justify-items: center;
+            text-align: center;
+        }
+
+        .videoWrap {
+            background: #f9f9f9;
+        }
+
+        .video {
+            width: 100%;
+            aspect-ratio: 16/9;
+            border: 0;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .compare {
+            display: grid;
+            gap: 18px;
+        }
+
+        @media(min-width:860px) {
+            .compare {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .final {
+            background: var(--brand);
+            color: #fff;
+            padding: 56px 0;
+        }
+
+        .final .wrap {
+            display: grid;
+            gap: 16px;
+            align-items: center;
+        }
+
+        @media(min-width:860px) {
+            .final .wrap {
+                grid-template-columns: 1.2fr .8fr;
+            }
+        }
+
+        footer {
+            background: #f0f0f0;
+            color: #666;
+            padding: 28px 0;
+            font-size: 13px;
+        }
+
+        footer .row {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        footer a {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="hero">
+        <div class="container hero-wrap">
+
+            <div class="content">
+                <img class="logo" src="https://d335luupugsy2.cloudfront.net/cms/files/1085989/1761568641/$5ne5bs0452u"
+                    alt="Global AgroSmart" />
+
+                <h1>
+                    <span class="hl">A nova inteligência do campo:</span>
+                    transforme imagens em decisões com a Global AgroSmart!
+                </h1>
+
+                <p><strong class="hl">Pare de adivinhar. Comece a decidir com dados reais.</strong></p>
+
+                <p>
+                    Ainda baseia suas decisões apenas na experiência e na observação visual?
+                    Enquanto isso, produtores inteligentes já estão reduzindo custos,
+                    prevenindo falhas e aumentando a produtividade por hectare.
+                </p>
+
+                <div class="ctaRow">
+                    <a class="btn" href="#teste">Teste grátis por 7 dias!</a>
+                    <a class="btn secondary" href="#como-funciona">Como funciona</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="section" style="background: var(--bg);">
+            <div class="container twoCol">
+                <div>
+                    <img src="https://d335luupugsy2.cloudfront.net/cms/files/1085989/1761568641/$42o1fnhqz6t"
+                        alt="Ilustração de análise" style="max-width: 360px; margin: 0 auto;" />
+                </div>
+
+                <div>
+                    <div class="tag">Benefícios</div>
+                    <h2 class="title">Veja o invisível e aja no momento certo</h2>
+                    <p class="lead">Menos ruído, mais ação. Uma plataforma que conecta diagnóstico, decisão e execução.
+                    </p>
+
+                    <div class="bullets">
+                        <div class="bullet">
+                            Identifique daninhas, pragas, doenças e falhas de cultivo de forma automática.
+                        </div>
+                        <div class="bullet">
+                            Compare o desenvolvimento das safras e envie rotas de pulverização direto para drones e
+                            tratores.
+                        </div>
+                        <div class="bullet">
+                            Visão completa da fazenda: da análise à ação, em um só lugar.
+                        </div>
+                    </div>
+
+                    <a class="btn" href="#teste">Teste grátis por 7 dias!</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section resultsWrap">
+            <div class="container">
+                <div class="resultsTitle">
+                    <h2 class="title" style="margin:0; text-align:center;">Resultados que transformam o campo</h2>
+                </div>
+
+                <div class="stats">
+                    <div class="card stat">
+                        <img src="https://d335luupugsy2.cloudfront.net/cms/files/1085989/1761568641/$74odpeqg48o"
+                            alt="" />
+                        <p>Aumento de produtividade com diagnósticos automáticos e rápidos.</p>
+                    </div>
+
+                    <div class="card stat">
+                        <img src="https://d335luupugsy2.cloudfront.net/cms/files/1085989/1761568641/$drblk1ia6vm"
+                            alt="" />
+                        <p>Redução de custos com aplicação precisa de insumos.</p>
+                    </div>
+
+                    <div class="card stat">
+                        <img src="https://d335luupugsy2.cloudfront.net/cms/files/1085989/1761568641/$mooq42h7hqr"
+                            alt="" />
+                        <p>Gestão inteligente do histórico produtivo e relatórios fáceis de entender.</p>
+                    </div>
+
+                    <div class="card stat">
+                        <img src="https://d335luupugsy2.cloudfront.net/cms/files/1085989/1761568641/$hbumsccijkk"
+                            alt="" />
+                        <p>Automação completa: do insight à execução sem intermediários.</p>
+                    </div>
+                </div>
+
+                <div style="text-align:center; margin-top: 22px;">
+                    <p style="margin: 0 0 14px; color: var(--muted);">
+                        A Global AgroSmart foi criada para tornar o campo mais eficiente, sustentável e rentável.
+                    </p>
+                    <a class="btn" href="#teste">Teste grátis por 7 dias!</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="teste" class="ctaBlock">
+            <div class="container">
+                <div class="inner">
+                    <h2>Teste gratuitamente e descubra o poder da IA no agronegócio</h2>
+                    <p>
+                        Cadastre-se e receba acesso exclusivo à plataforma Global AgroSmart.
+                        Nossa equipe pode acompanhar seus primeiros resultados.
+                    </p>
+
+                    <!-- Sem formulário: troque os links abaixo pelo seu destino real (WhatsApp, e-mail, checkout, etc.) -->
+                    <div class="ctaRow" style="justify-content:center;">
+                        <a class="btn" href="https://wa.me/5500000000000" target="_blank" rel="noopener">Quero testar
+                            agora!</a>
+                        <a class="btn secondary" href="#por-que">Ver motivos</a>
+                    </div>
+
+                    <p style="font-size: 13px; opacity:.9;">
+                        Dica: altere o WhatsApp no href para o número correto.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="como-funciona" class="section" style="background: var(--bg);">
+            <div class="container twoCol swap">
+                <div>
+                    <div class="tag">Passo a passo</div>
+                    <h2 class="title">Como a Global AgroSmart funciona na prática</h2>
+
+                    <div class="bullets">
+                        <div class="bullet"><strong>Capture suas imagens</strong> com drone ou parceiro autorizado.
+                        </div>
+                        <div class="bullet"><strong>Envie para a plataforma</strong> e deixe a IA processar
+                            automaticamente.</div>
+                        <div class="bullet"><strong>Receba relatórios e alertas</strong> com diagnósticos e
+                            recomendações claras.</div>
+                        <div class="bullet"><strong>Execute a ação</strong> enviando rotas direto para equipamentos em
+                            campo.</div>
+                    </div>
+
+                    <p style="margin:0; text-align:center; font-weight:900;">
+                        Sem complicação, sem etapas manuais: <span class="hl" style="color:#fff;">só resultado.</span>
+                    </p>
+                </div>
+
+                <div>
+                    <img src="https://d335luupugsy2.cloudfront.net/cms/files/1085989/1761568641/$n358210tf8n"
+                        alt="Ilustração de plataforma" style="max-width: 460px; margin: 0 auto;" />
+                </div>
+            </div>
+        </section>
+
+        <section class="section videoWrap">
+            <div class="container">
+                <div style="text-align:center; margin-bottom: 16px;">
+                    <div class="tag">Vídeo</div>
+                    <h2 class="title" style="margin: 8px 0 0; text-align:center;">Veja uma visão rápida</h2>
+                </div>
+
+                <iframe class="video"
+                    src="https://www.youtube.com/embed/WH0mXGVQoFs?&amp;rel=0&amp;autoplay=1&amp;mute=1"
+                    title="Global AgroSmart"
+                    allow="autoplay; accelerometer; encrypted-media; gyroscope; fullscreen; picture-in-picture"
+                    allowfullscreen=""></iframe>
+            </div>
+        </section>
+
+        <section id="por-que" class="section" style="background: var(--bg);">
+            <div class="container">
+                <h2 class="title" style="text-align:center; margin-bottom: 22px;">Por que você precisa da Global
+                    AgroSmart?</h2>
+
+                <div class="compare">
+                    <div class="card pad">
+                        <div class="cmpTitle">
+                            <span class="dot"></span>
+                            <span>Sem a Global AgroSmart</span>
+                        </div>
+                        <ul class="cmpList">
+                            <li>Dificuldade para <strong>enxergar falhas e pragas a tempo</strong>.</li>
+                            <li>Decisões baseadas em <strong>achismos, não em dados</strong>.</li>
+                            <li><strong>Tempo perdido</strong> analisando mapas complexos.</li>
+                            <li>Falta de integração entre <strong>análise, recomendação e ação</strong>.</li>
+                            <li>Alto custo de <strong>retrabalho e aplicação incorreta</strong> de insumos.</li>
+                        </ul>
+                    </div>
+
+                    <div class="card pad">
+                        <div class="cmpTitle ok">
+                            <span class="dot"></span>
+                            <span>Com a Global AgroSmart</span>
+                        </div>
+                        <ul class="cmpList">
+                            <li><strong>Plataforma completa e automatizada</strong> da análise à execução.</li>
+                            <li><strong>Relatórios simples e diretos</strong>, prontos para decisão.</li>
+                            <li><strong>Acompanhamento de safras</strong> e evolução temporal.</li>
+                            <li><strong>Visualização 3D, multispectral</strong> e índices vegetativos.</li>
+                            <li><strong>Modelo acessível e escalável</strong>, adaptado à sua operação.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="text-align:center; margin-top: 22px;">
+                    <p style="margin:0 0 14px; color: var(--muted);">
+                        A Global AgroSmart entrega tecnologia de ponta com simplicidade e eficiência.
+                    </p>
+                    <a class="btn" href="#teste">Teste grátis por 7 dias!</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="final">
+            <div class="container final wrap">
+                <div>
+                    <h2>Global AgroSmart: o futuro do agronegócio começa agora!</h2>
+                    <p style="margin-top:10px;">
+                        De Brasil a França, revolucionando a agricultura de precisão com Inteligência Artificial,
+                        automação e simplicidade em uma só plataforma.
+                    </p>
+                    <p style="margin-top:10px; font-weight:900;">Transforme seus mapas em decisões inteligentes.</p>
+                </div>
+
+                <div style="display:flex; justify-content:center;">
+                    <a class="btn" href="#teste" style="width: min(420px, 100%);">Quero testar agora!</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div>© <span id="year"></span> Global AgroSmart</div>
+                <div>
+                    <a href="#teste">Teste grátis</a>
+                    <span style="opacity:.5;"> | </span>
+                    <a href="#como-funciona">Como funciona</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
